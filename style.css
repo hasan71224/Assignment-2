@@ -4,6 +4,7 @@ body{
     margin: 0;
 }
 /* header section style */
+
 .hadding h3{
     font-size: 24px;
     font-weight: 700;
@@ -11,10 +12,10 @@ body{
 section{
     padding: 50px 0;
 }
+
 .top-section{
     display: flex;
     align-items: center;
-    /* margin-top: 60px; */
 }
 .header-title{
     width: 90%;
@@ -133,28 +134,28 @@ section{
 }
 
   
-    .seller{
-        display: flex;
-        margin-bottom: 26px;
+.seller{
+    display: flex;
+    margin-bottom: 26px;
     }
-    .seller img{
+.seller img{
         height: 177px;
         width: 177px;
-    }
-    .seller-info{
+}
+.seller-info{
         margin-left: 16px;
-    }
-    .seller-title{
+}
+.seller-title{
         font-size: 20px;
-    }
-    .name{
+ }
+.name{
         font-size:16px;
         color: #9F9F9F;;
-    }
-    .name a{
+}
+.name a{
         color: #562EFF;
         text-decoration: none;
-    }
+ }
 
 
 /* footer section style start */
@@ -173,4 +174,98 @@ footer{
     font-size: 700;
 }
 
+/* responsive for mobile device */
 
+@media(max-width:688px){
+    /* heading section */
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    section{
+        padding:0;
+    }
+    .hadding h3{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .top-section{
+        flex-direction: column;
+    }
+    .header-title h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .header-title p {
+        text-align: center;
+        font-size: 13px;
+    }
+    .btn {
+        margin-left: 60px;
+    }
+    .collection img {
+        width: 220px;
+        height: 170px;
+    }
+    .header-img img {
+        width: 80%;
+        margin: 35px;
+    }
+    .container {
+        padding: 30px;
+    }
+    /* collection section */
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .collection-section .see-more-button {
+        padding-right: 0;
+    }
+    /* seller section */
+    .sellers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .seller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seller-info {
+        margin-left: 0px;
+    }
+    h3.sellerg-title {
+        font-size: 12px;
+    }
+    p.namer {
+        font-size: 10px;
+    }
+}
+/* responsive for tab device */
+/* @media(min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+    .top-section{
+        display: flex;
+        align-items: center;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course{
+        flex-direction: column;
+    }
+} */ */
