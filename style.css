@@ -245,27 +245,15 @@ footer{
     }
 }
 /* responsive for tab device */
-/* @media(min-width:688px) and (max-width:992px){
-    .container{
-        width: 100%;
+@media(min-width:688px) and (max-width:992px){
+    body {
+        padding: 0px 30px;
+        margin: 0;
     }
-    body{
-        width: 100%;
-    }
-    .top-section{
-        display: flex;
-        align-items: center;
-    }
-    .players{
+    .collections {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .blogs{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .courses{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .course{
-        flex-direction: column;
-    }
-} */ */
+    .collection {
+        margin: 12px 12px;
+} 
